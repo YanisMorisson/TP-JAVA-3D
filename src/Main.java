@@ -4,4 +4,6 @@ public class Main {
         System.out.println (CharlesDeGaulle);
     }
 
+    World w = new World("/Users/sinay/ENSEA/3D/TP/JAVA/airport-codes_no_comma.csv");
+
 }
