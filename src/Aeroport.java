@@ -3,11 +3,11 @@ public class Aeroport {
     private String IATA;
     private String Name;
     private String country;
-    private double latitude;
-    private double longitude;
+    private Double latitude;
+    private Double longitude;
 
 
-    public aeroport( String IATA , String Name , String country , double latitude , double longitude) {
+    public Aeroport( String IATA , String Name , String country , Double latitude , Double longitude) {
         this.IATA = IATA;
         this.Name = Name;
         this.country = country;
@@ -19,17 +19,17 @@ public class Aeroport {
         return IATA;
     }
 
-    public double getLatitude() {
+    public Double getLatitude() {
         return latitude;
     }
 
-    public double getLongitude() {
+    public Double getLongitude() {
         return longitude;
     }
 
     @Override
     public String toString() {
-        return "aeroport{" +
+        return "Aeroport{" +
                 "IATA='" + IATA + '\'' +
                 ", Name='" + Name + '\'' +
                 ", country='" + country + '\'' +
