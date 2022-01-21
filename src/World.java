@@ -8,6 +8,7 @@ public class World {
     public ArrayList<Aeroport> getAeroportlist() {
         return Aeroportlist;
     }
+
     public World(String fileName) {
 
         Aeroportlist = new ArrayList<Aeroport>();
@@ -39,13 +40,13 @@ public class World {
 
         }
 
-    public Aeroport findByCode(String code){
-        for(Aeroport aero : Aeroportlist){
-            if(aero.getIATA().equals(code)){
-                return aero;
+    public Aeroport findByCode(String code){       // On entre le code que l'on souhaite trouver.
+        for(Aeroport aero : Aeroportlist){         // Ouvre la Aeroport list avec en arg aero.
+            if(aero.getIATA().equals(code)){       // Si un IATA de la list correspond au code,
+                return aero;                            // on retourne l'aeroport correspondant.
             }
         }
-        System.out.println("Le code IATA ne correspond à aucun aeroport !!! ");
+        System.out.println("***** Code IATA introuvable ***** ");
         return null;
     }
 
