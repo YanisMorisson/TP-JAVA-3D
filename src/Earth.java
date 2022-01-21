@@ -10,30 +10,30 @@ import javafx.scene.transform.Rotate;
 import java.util.ArrayList;
 
 public class Earth extends Group {
-    private Rotate r = new Rotate(0, new Point3D(0,1,0));
-    private Sphere s = new Sphere(300);
+    private Rotate ry = new Rotate();
+    private Sphere sph = new Sphere();
     ArrayList<Sphere> yellowSphere = new ArrayList<>();
-
+    PhongMaterial material = new PhongMaterial();
+    //private Scene ihm = new Scene();
 
     public Earth() {
-        this.getChildren().add(s);
-        PhongMaterial pm = new PhongMaterial();
-        try {
-            Image im = new Image("/Users/sinay/ENSEA/3D/TP/JAVA/earth_lights_4800.png");
-            pm.setDiffuseMap(im);
-            s.getTransforms().add(r);
-            s.setMaterial(pm);
+        super();
+        Image im = new Image("/Users/sinay/ENSEA/3D/TP/JAVA/earth_lights_4800.png");
+        sph.setRadius(300);
+        sph.getTransforms().add(ry);
+        material.setDiffuseMap(im);
+        sph.setMaterial(material);
+        this.getChildren().add(sph);
+
+
+ /*   }
+    AnimationTimer animationTimer = new AnimationTimer() {
+        double angle = 0;
+        @Override
+        public void handle(long time) {
+            ry.setAngle();
         }
-        catch (Exception e){
-            e.printStackTrace();
-        }
-        AnimationTimer anim = new AnimationTimer() {
-            double angle = 0;
-            @Override
-            public void handle(long time) {
-                r.setAngle(time/70000000);
-            }
-        };
-        anim.start();
+    };
+            animationTimer.start();*/
     }
 }
