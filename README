@@ -1,1 +1,26 @@
 
+Yanis MORISSON 
+
+TP Catch me if you can !
+
+Le but du tp est de créer un petit utilitaire permettant d’afficher quelques données relatives à l’aviation de tourisme. Au
+cours de ces séances, on va utiliser une source de données statiques (la liste des aéroports mondiaux au format
+.csv), et une source de données dynamiques (une API sur le site aviationstack.com).
+
+Bien que je ne suis pas parvenu à finir entièrement le tp, il m'a appris un grand nombre de choses :
+- Premièrement pouvoir accèder à un tableau et pouvoir ensuite trier les données qui m'interrissaient comme par expemple dans
+la liste des aeroports, ne selectionner que les grands aéroports. 
+
+- C'était également la première fois que je faisais intervenir des données gps dans de la programmation. J'ai trouvé ca interréssant
+de pouvoir en fonction de ma position trouver l'aeroport le plus proche ( avec findNearest). Mais egalement de pouvoir calculer 
+la distance entre un point A et un aeroport dont les coordonnées sont dans le fichier csv. 
+
+- Ce que j'ai trouvé interessant avec le tableau c'est le fait de parcourir la liste .csv et ne garder que la plus petite distance 
+car cela ne prend pas beaucoup de ligne et ca permet un traitement de données tres efficace. De plus plus tard je compte m'orienté vers 
+la programmation base de données. 
+
+- Ce tp m'a permis de découvir l'outil javafx c'est framework et une bibliothèque d'interface utilisateur issue du projet 
+OpenJFX, ca permet de créer une interface graphique pour des applications de bureau, des applications internet
+et des applications smartphones. 
+
+- J'ai également vu les translation ( dans l'interface)
