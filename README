@@ -27,7 +27,10 @@ et des applications smartphones.
 - Dans la partie IHM j'ai appris à modéliser en 3D avec la construction de la sphere et la camera eloignée. 
 
 - J'ai également utilisé une fonction que j'avais deja utilisé au cours de mes études mais cette fois ci appliquée à de la 3D. Il s'agit du MouseEvent. 
-Ca m'a permis de modifier la translation de la "caméra" à l'aide de la position de ma souris. 
+Ca m'a permis de modifier la translation de la "caméra" à l'aide de la position de ma souris pour zommer par exemple. Je renvoie aussi les coordonnées de l'endroit 
+ou je clique sur la terre. 
+
+
 
 
 
