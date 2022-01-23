@@ -11,7 +11,7 @@ public class Main {
 //*********************
 
     public static void main(String[] args) {
-        World w = new World("/Users/sinay/ENSEA/3D/TP/JAVA/airport-codes_no_comma.csv"); // Récupérer la liste
+        World w = new World("/airport-codes_no_comma.csv"); // Récupérer la liste
         System.out.println("Found " + w.getAeroportlist().size() + " airports."); // Afficher le nb de grand aeroports
         Aeroport paris = w.findNearestAirport(2.316, 48.866); // Trouver l'aeroport le plus proche de paris
         Aeroport cdg = w.findByCode("CDG"); // Trouver CDG dans la liste

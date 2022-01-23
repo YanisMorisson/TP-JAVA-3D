@@ -11,8 +11,9 @@ public class Interface extends Application {
     double getx;
     double zoom;
     @Override
+
     public void start(Stage primaryStage) throws Exception {
-        primaryStage.setTitle("Hello world");
+        primaryStage.setTitle("Earth");
         Earth earth = new Earth();
         Scene ihm = new Scene(earth, 600, 400, true);
         primaryStage.setScene(ihm);
